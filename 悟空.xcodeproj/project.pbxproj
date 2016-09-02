@@ -105,6 +105,7 @@
 		009F9FE61D659BDF00539766 /* WKCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009F9FE51D659BDF00539766 /* WKCustomCell.m */; };
 		009F9FE91D65A1B000539766 /* WKDetailCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009F9FE81D65A1B000539766 /* WKDetailCustomController.m */; };
 		009F9FEB1D65A1D500539766 /* WKDetailCustom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009F9FEA1D65A1D500539766 /* WKDetailCustom.storyboard */; };
+		00B2D3E51D79797800144B4D /* uiview.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B2D3E41D79797800144B4D /* uiview.m */; };
 		00C2CC721D5ABF2B006CD8E7 /* WKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2CC711D5ABF2B006CD8E7 /* WKLoginViewController.m */; };
 		00C2CC751D5ABFBC006CD8E7 /* WKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2CC741D5ABFBC006CD8E7 /* WKLoginController.m */; };
 		00C2CC7B1D5ACA62006CD8E7 /* WKHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2CC7A1D5ACA62006CD8E7 /* WKHeaderView.m */; };
@@ -301,6 +302,8 @@
 		009F9FE71D65A1B000539766 /* WKDetailCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDetailCustomController.h; sourceTree = "<group>"; };
 		009F9FE81D65A1B000539766 /* WKDetailCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDetailCustomController.m; sourceTree = "<group>"; };
 		009F9FEA1D65A1D500539766 /* WKDetailCustom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WKDetailCustom.storyboard; sourceTree = "<group>"; };
+		00B2D3E31D79797800144B4D /* uiview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uiview.h; sourceTree = "<group>"; };
+		00B2D3E41D79797800144B4D /* uiview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uiview.m; sourceTree = "<group>"; };
 		00C2CC701D5ABF2B006CD8E7 /* WKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginViewController.h; sourceTree = "<group>"; };
 		00C2CC711D5ABF2B006CD8E7 /* WKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKLoginViewController.m; sourceTree = "<group>"; };
 		00C2CC731D5ABFBC006CD8E7 /* WKLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKLoginController.h; sourceTree = "<group>"; };
@@ -593,6 +596,8 @@
 				00C4C97D1D5991B7006029DF /* Contacts */,
 				00C4C9621D5991AB006029DF /* manage */,
 				00C4C96B1D5991AB006029DF /* me */,
+				00B2D3E31D79797800144B4D /* uiview.h */,
+				00B2D3E41D79797800144B4D /* uiview.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -1065,6 +1070,7 @@
 				0067BD251D62ACBF007416BB /* WKYaoQingGysTableViewController.m in Sources */,
 				0080FBD31D6D6E8F00F61DD9 /* WKCoalDetail.m in Sources */,
 				0067BCFE1D616049007416BB /* WKFindSecurityController.m in Sources */,
+				00B2D3E51D79797800144B4D /* uiview.m in Sources */,
 				00C4C95E1D598D17006029DF /* WKNavigationController.m in Sources */,
 				0067BD2C1D62B3F7007416BB /* WKSupplierViewController.m in Sources */,
 				0067BD221D62AAAA007416BB /* WKGoToAddViewController.m in Sources */,
