@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>coalName</key>
+			<string>聚会</string>
+			<key>num</key>
+			<string>2</string>
+			<key>status</key>
+			<string>下架中</string>
+			<key>lidu</key>
+			<string>0</string>
+			<key>coalLei</key>
+			<string>烟煤</string>
+			<key>coalPlace</key>
+			<string>北京</string>
+			<key>reZhi</key>
+			<string>15246</string>
+			<key>liu</key>
+			<string>13.00</string>
+			<key>water</key>
+			<string>12.00</string>
+			<key>huiFen</key>
+			<string>45.00</string>
+			<key>qing</key>
+			<string>25</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>coalName</key>
+			<string>一三籽</string>
+			<key>num</key>
+			<string>2</string>
+			<key>status</key>
+			<string>下架中</string>
+			<key>lidu</key>
+			<string>0</string>
+			<key>coalLei</key>
+			<string>烟煤</string>
+			<key>coalPlace</key>
+			<string>北京</string>
+			<key>reZhi</key>
+			<string>15246</string>
+			<key>liu</key>
+			<string>13.00</string>
+			<key>water</key>
+			<string>12.00</string>
+			<key>huiFen</key>
+			<string>45.00</string>
+			<key>qing</key>
+			<string>25</string>
+		</dict>
+	</array>
+</array>
+</plist>

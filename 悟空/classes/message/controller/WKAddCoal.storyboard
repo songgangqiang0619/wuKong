@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="feI-Mx-zo0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Add Coal Table View Controller-->
+        <scene sceneID="4ID-4p-gxJ">
+            <objects>
+                <tableViewController id="feI-Mx-zo0" customClass="WKAddCoalTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="30" id="qpw-GT-sPM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="标准*号的选项为必选项" id="bjb-eK-zhk">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UhL-od-uC6">
+                                        <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UhL-od-uC6" id="bp6-6j-e5V">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基本信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wm-I6-BuE">
+                                                    <rect key="frame" x="20" y="0.0" width="80" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="清空" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-be-5nJ">
+                                                    <rect key="frame" x="525" y="7" width="55" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Q1c-be-5nJ" secondAttribute="trailing" constant="20" id="Frl-V9-XGg"/>
+                                                <constraint firstItem="Q1c-be-5nJ" firstAttribute="centerY" secondItem="2wm-I6-BuE" secondAttribute="centerY" id="O1N-x8-uXt"/>
+                                                <constraint firstAttribute="bottom" secondItem="2wm-I6-BuE" secondAttribute="bottom" id="ReN-fU-lKw"/>
+                                                <constraint firstItem="2wm-I6-BuE" firstAttribute="top" secondItem="bp6-6j-e5V" secondAttribute="top" id="UTv-qc-Xzt"/>
+                                                <constraint firstItem="2wm-I6-BuE" firstAttribute="leading" secondItem="bp6-6j-e5V" secondAttribute="leading" constant="20" id="sV0-FG-PDz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="k7q-xa-fCE">
+                                        <rect key="frame" x="0.0" y="93.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k7q-xa-fCE" id="due-KD-eli">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbw-Zf-XVV">
+                                                    <rect key="frame" x="20" y="0.0" width="86" height="43.5"/>
+                                                    <state key="normal" title="煤炭名称" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="例如一三籽" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KTI-gG-Tv9">
+                                                    <rect key="frame" x="116" y="0.0" width="464" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="KTI-gG-Tv9" secondAttribute="trailing" constant="20" id="DsK-TG-bCG"/>
+                                                <constraint firstItem="Bbw-Zf-XVV" firstAttribute="top" secondItem="due-KD-eli" secondAttribute="top" id="QDf-ap-vQa"/>
+                                                <constraint firstItem="KTI-gG-Tv9" firstAttribute="leading" secondItem="Bbw-Zf-XVV" secondAttribute="trailing" constant="10" id="SRR-An-1bC"/>
+                                                <constraint firstAttribute="bottom" secondItem="KTI-gG-Tv9" secondAttribute="bottom" id="e5I-5d-aHG"/>
+                                                <constraint firstItem="Bbw-Zf-XVV" firstAttribute="leading" secondItem="due-KD-eli" secondAttribute="leading" constant="20" id="gZb-r6-pST"/>
+                                                <constraint firstItem="KTI-gG-Tv9" firstAttribute="top" secondItem="due-KD-eli" secondAttribute="top" id="kbk-be-Bb0"/>
+                                                <constraint firstAttribute="bottom" secondItem="Bbw-Zf-XVV" secondAttribute="bottom" id="mC6-F4-UQ0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4Yz-XR-POv">
+                                        <rect key="frame" x="0.0" y="137.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Yz-XR-POv" id="K3J-yy-LOC">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqJ-PT-QrL">
+                                                    <rect key="frame" x="20" y="0.0" width="86" height="43.5"/>
+                                                    <state key="normal" title="煤炭种类" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBR-gM-p1S">
+                                                    <rect key="frame" x="116" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="wMY-rd-PnD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="烟煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="烟煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="烟煤">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="cXw-L0-OMO"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrT-OG-lIH">
+                                                    <rect key="frame" x="196" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="lwA-Ri-Ypy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="无烟煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="无烟煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="无烟煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="WsW-p4-jki"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="12" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EP-Ai-E9c">
+                                                    <rect key="frame" x="276" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="ZNL-OV-3MH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="褐煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="b78-bl-Qb3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SrT-OG-lIH" firstAttribute="top" secondItem="K3J-yy-LOC" secondAttribute="top" constant="7" id="2dF-na-pXT"/>
+                                                <constraint firstItem="SrT-OG-lIH" firstAttribute="leading" secondItem="EBR-gM-p1S" secondAttribute="trailing" constant="10" id="IyG-Eg-ZxQ"/>
+                                                <constraint firstItem="SqJ-PT-QrL" firstAttribute="leading" secondItem="K3J-yy-LOC" secondAttribute="leading" constant="20" id="Liy-t6-B5C"/>
+                                                <constraint firstItem="2EP-Ai-E9c" firstAttribute="leading" secondItem="SrT-OG-lIH" secondAttribute="trailing" constant="10" id="WdG-bn-EEL"/>
+                                                <constraint firstItem="2EP-Ai-E9c" firstAttribute="top" secondItem="K3J-yy-LOC" secondAttribute="top" constant="7" id="XDN-Zm-vdg"/>
+                                                <constraint firstItem="EBR-gM-p1S" firstAttribute="top" secondItem="K3J-yy-LOC" secondAttribute="top" constant="7" id="cxO-Ep-2DQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="SqJ-PT-QrL" secondAttribute="bottom" id="ey2-BH-iTx"/>
+                                                <constraint firstItem="SqJ-PT-QrL" firstAttribute="top" secondItem="K3J-yy-LOC" secondAttribute="top" id="hHb-qJ-rK3"/>
+                                                <constraint firstAttribute="bottom" secondItem="EBR-gM-p1S" secondAttribute="bottom" constant="7" id="loS-0q-eBY"/>
+                                                <constraint firstAttribute="bottom" secondItem="2EP-Ai-E9c" secondAttribute="bottom" constant="7" id="sRG-zf-ikl"/>
+                                                <constraint firstItem="EBR-gM-p1S" firstAttribute="leading" secondItem="SqJ-PT-QrL" secondAttribute="trailing" constant="10" id="tng-Fw-LBe"/>
+                                                <constraint firstAttribute="bottom" secondItem="SrT-OG-lIH" secondAttribute="bottom" constant="7" id="xG7-PR-FUi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cVq-6A-SmO">
+                                        <rect key="frame" x="0.0" y="181.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cVq-6A-SmO" id="cgW-Xd-YlL">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68l-DH-Abq">
+                                                    <rect key="frame" x="20" y="0.0" width="86" height="43.5"/>
+                                                    <state key="normal" title="煤炭用途" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFh-xQ-KBO">
+                                                    <rect key="frame" x="116" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="zUn-tT-V4d"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="气化煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="xyt-lB-qJ7"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="21" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nP-5T-wXn">
+                                                    <rect key="frame" x="196" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="aiY-Mm-HHD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="焦煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="4mS-EK-MkR"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="22" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV2-od-C6Z">
+                                                    <rect key="frame" x="276" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="hMy-1P-SLZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="动力煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="动力煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="lE6-ce-7A4"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="oFh-xQ-KBO" secondAttribute="bottom" constant="7" id="782-13-AU1"/>
+                                                <constraint firstItem="oFh-xQ-KBO" firstAttribute="leading" secondItem="68l-DH-Abq" secondAttribute="trailing" constant="10" id="8Kz-ce-wfA"/>
+                                                <constraint firstItem="68l-DH-Abq" firstAttribute="leading" secondItem="cgW-Xd-YlL" secondAttribute="leading" constant="20" id="9rq-zK-nSq"/>
+                                                <constraint firstItem="oFh-xQ-KBO" firstAttribute="top" secondItem="cgW-Xd-YlL" secondAttribute="top" constant="7" id="Hcz-ut-Igv"/>
+                                                <constraint firstItem="1nP-5T-wXn" firstAttribute="top" secondItem="cgW-Xd-YlL" secondAttribute="top" constant="7" id="J0O-Fs-rya"/>
+                                                <constraint firstItem="68l-DH-Abq" firstAttribute="top" secondItem="cgW-Xd-YlL" secondAttribute="top" id="JVg-Cc-XnX"/>
+                                                <constraint firstAttribute="bottom" secondItem="WV2-od-C6Z" secondAttribute="bottom" constant="7" id="Kti-sI-kEQ"/>
+                                                <constraint firstItem="1nP-5T-wXn" firstAttribute="leading" secondItem="oFh-xQ-KBO" secondAttribute="trailing" constant="10" id="MDU-SM-Jjg"/>
+                                                <constraint firstAttribute="bottom" secondItem="68l-DH-Abq" secondAttribute="bottom" id="Onv-h9-RQ8"/>
+                                                <constraint firstItem="WV2-od-C6Z" firstAttribute="top" secondItem="cgW-Xd-YlL" secondAttribute="top" constant="7" id="OzU-nM-ffu"/>
+                                                <constraint firstAttribute="bottom" secondItem="1nP-5T-wXn" secondAttribute="bottom" constant="7" id="UBo-xq-Dli"/>
+                                                <constraint firstItem="WV2-od-C6Z" firstAttribute="leading" secondItem="1nP-5T-wXn" secondAttribute="trailing" constant="10" id="n7L-t8-24c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rBd-RF-UlS">
+                                        <rect key="frame" x="0.0" y="225.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rBd-RF-UlS" id="uJw-4m-kZw">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sU1-Ns-sDD">
+                                                    <rect key="frame" x="20" y="0.0" width="86" height="43.5"/>
+                                                    <state key="normal" title="煤炭来源" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulv-nB-RC2">
+                                                    <rect key="frame" x="116" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="Om3-BU-pXJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="单一煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="单一煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="899-Ml-VYu"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="31" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cS-aN-C5g">
+                                                    <rect key="frame" x="196" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="V0Z-as-inb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="配煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="配煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="fXz-7h-gC0"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ulv-nB-RC2" firstAttribute="leading" secondItem="sU1-Ns-sDD" secondAttribute="trailing" constant="10" id="CJO-eh-Sc7"/>
+                                                <constraint firstItem="4cS-aN-C5g" firstAttribute="leading" secondItem="Ulv-nB-RC2" secondAttribute="trailing" constant="10" id="EIU-Qf-jgD"/>
+                                                <constraint firstItem="Ulv-nB-RC2" firstAttribute="top" secondItem="uJw-4m-kZw" secondAttribute="top" constant="7" id="LIo-sr-pM4"/>
+                                                <constraint firstAttribute="bottom" secondItem="sU1-Ns-sDD" secondAttribute="bottom" id="W2I-Qa-1Ct"/>
+                                                <constraint firstItem="4cS-aN-C5g" firstAttribute="top" secondItem="uJw-4m-kZw" secondAttribute="top" constant="7" id="dHN-bc-ctN"/>
+                                                <constraint firstAttribute="bottom" secondItem="4cS-aN-C5g" secondAttribute="bottom" constant="7" id="hLF-L0-6eR"/>
+                                                <constraint firstItem="sU1-Ns-sDD" firstAttribute="top" secondItem="uJw-4m-kZw" secondAttribute="top" id="iqc-ac-XQ6"/>
+                                                <constraint firstItem="sU1-Ns-sDD" firstAttribute="leading" secondItem="uJw-4m-kZw" secondAttribute="leading" constant="20" id="she-zM-n34"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ulv-nB-RC2" secondAttribute="bottom" constant="7" id="ywW-a5-Kog"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GJL-lc-JZl">
+                                        <rect key="frame" x="0.0" y="269.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GJL-lc-JZl" id="gQR-Fu-lOF">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgd-VP-3wS">
+                                                    <rect key="frame" x="20" y="0.0" width="86" height="43.5"/>
+                                                    <state key="normal" title="煤炭加工" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="40" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsj-JI-Kbb">
+                                                    <rect key="frame" x="116" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="evP-ED-W7h"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="洗煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="洗煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="3Z6-tK-dUt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="41" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyK-Cv-TyI">
+                                                    <rect key="frame" x="196" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="n3R-mH-QJS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="非洗煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="非洗煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="B9W-mM-3yZ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QyK-Cv-TyI" firstAttribute="leading" secondItem="Vsj-JI-Kbb" secondAttribute="trailing" constant="10" id="4aQ-n3-KAi"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vsj-JI-Kbb" secondAttribute="bottom" constant="7" id="6x4-7b-91z"/>
+                                                <constraint firstItem="Kgd-VP-3wS" firstAttribute="leading" secondItem="gQR-Fu-lOF" secondAttribute="leading" constant="20" id="Mve-eC-6cU"/>
+                                                <constraint firstItem="Vsj-JI-Kbb" firstAttribute="leading" secondItem="Kgd-VP-3wS" secondAttribute="trailing" constant="10" id="boL-un-F1j"/>
+                                                <constraint firstItem="Vsj-JI-Kbb" firstAttribute="top" secondItem="gQR-Fu-lOF" secondAttribute="top" constant="7" id="wPY-KS-rns"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kgd-VP-3wS" secondAttribute="bottom" id="yKK-Cu-UWK"/>
+                                                <constraint firstItem="Kgd-VP-3wS" firstAttribute="top" secondItem="gQR-Fu-lOF" secondAttribute="top" id="ymo-GN-ocS"/>
+                                                <constraint firstAttribute="bottom" secondItem="QyK-Cv-TyI" secondAttribute="bottom" constant="7" id="zDS-MU-1Cw"/>
+                                                <constraint firstItem="QyK-Cv-TyI" firstAttribute="top" secondItem="gQR-Fu-lOF" secondAttribute="top" constant="7" id="zP7-IT-I3o"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="YDK-Z2-qiQ">
+                                        <rect key="frame" x="0.0" y="313.5" width="600" height="190"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YDK-Z2-qiQ" id="Dbb-U3-mcc">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="189.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y48-c8-RrN">
+                                                    <rect key="frame" x="20" y="10" width="86" height="22"/>
+                                                    <state key="normal" title="煤炭粒度" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="50" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpe-Sz-sq4">
+                                                    <rect key="frame" x="116" y="7" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="WN9-aU-omw"/>
+                                                        <constraint firstAttribute="height" constant="29.5" id="es7-j0-K0I"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="末煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="末煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="单一煤">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="HMj-Fl-LVf"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="51" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7v-9C-rqz">
+                                                    <rect key="frame" x="196" y="7" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29.5" id="Pfn-ty-lrf"/>
+                                                        <constraint firstAttribute="width" constant="70" id="sd7-S7-mEO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="配煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="米渣" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="配煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="Dip-8t-Gl5"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="52" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhx-uh-coo">
+                                                    <rect key="frame" x="276" y="7" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29.5" id="Odt-3p-rQc"/>
+                                                        <constraint firstAttribute="width" constant="70" id="zPg-m7-3vM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="配煤" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="配煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="bjY-qW-SCB"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="53" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayD-cG-WDk">
+                                                    <rect key="frame" x="116" y="44" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29.5" id="CDo-wR-wtu"/>
+                                                        <constraint firstAttribute="width" constant="70" id="Vl8-cE-Kyq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="一三籽" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="一三籽" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="气化煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="wVl-Hc-vzS"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="54" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1S-sb-Cdt">
+                                                    <rect key="frame" x="196" y="44" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29.5" id="PTO-Xo-ssS"/>
+                                                        <constraint firstAttribute="width" constant="70" id="zxK-wc-Fl5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="二五籽" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="二五籽" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="焦煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="zPb-cg-Cz5"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="55" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrj-vj-bIS">
+                                                    <rect key="frame" x="276" y="44" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="WPt-Jc-vI8"/>
+                                                        <constraint firstAttribute="height" constant="29.5" id="jdS-Od-DtD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="三六块" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="三六块" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="动力煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="h3g-5N-p45"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="56" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQE-2W-9Tr">
+                                                    <rect key="frame" x="116" y="81" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="6LG-Ye-Je6"/>
+                                                        <constraint firstAttribute="height" constant="29.5" id="GHH-mB-NjO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="三八块" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="三八块" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="单一煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="kex-oX-7ih"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="57" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sA-fD-LxG">
+                                                    <rect key="frame" x="196" y="81" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29.5" id="aSx-oc-9O1"/>
+                                                        <constraint firstAttribute="width" constant="70" id="d9a-W3-woN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="四九块" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="四九块" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="配煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="y8g-2u-IH0"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="58" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjD-He-CMH">
+                                                    <rect key="frame" x="116" y="118" width="70" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29.5" id="0Wg-Ie-8j1"/>
+                                                        <constraint firstAttribute="width" constant="70" id="Vhi-Ey-tqE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="其它" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="其它" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="气化煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="mRq-Mv-uEp"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="58" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="494-RM-HlJ">
+                                                    <rect key="frame" x="196" y="143" width="50" height="1.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Drl-Ay-JXX"/>
+                                                        <constraint firstAttribute="height" constant="1" id="b21-r0-gCO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="其它" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="气化煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="GBc-wH-XD7"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="毫米至" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ou2-kY-ZFp">
+                                                    <rect key="frame" x="248" y="130" width="30" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.7389357003" green="0.7389357003" blue="0.7389357003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="58" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJz-kT-Rel">
+                                                    <rect key="frame" x="281" y="143" width="50" height="1"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="HpV-l7-DmU"/>
+                                                        <constraint firstAttribute="width" constant="50" id="fZJ-xv-bdf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" title="其它" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="气化煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="bMv-g1-FqZ"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="毫米" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKq-hZ-WHJ">
+                                                    <rect key="frame" x="331" y="132" width="20" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.7389357003" green="0.7389357003" blue="0.7389357003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="参考尺寸标准：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rF6-ZO-bT3">
+                                                    <rect key="frame" x="116" y="160" width="91" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clE-EA-l4i">
+                                                    <rect key="frame" x="207" y="160" width="24.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gkG-Hx-WLO">
+                                                    <rect key="frame" x="196" y="118" width="50" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="VGq-un-nbx"/>
+                                                        <constraint firstAttribute="height" constant="30" id="dwO-T4-jIe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIo-GY-DPn">
+                                                    <rect key="frame" x="281" y="118" width="50" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Jb4-2p-3Ci"/>
+                                                        <constraint firstAttribute="width" constant="50" id="pNf-my-AHN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a1S-sb-Cdt" firstAttribute="top" secondItem="a7v-9C-rqz" secondAttribute="bottom" constant="7" id="09l-QJ-IeK"/>
+                                                <constraint firstItem="gkG-Hx-WLO" firstAttribute="leading" secondItem="FjD-He-CMH" secondAttribute="trailing" constant="10" id="0aH-ZQ-M9P"/>
+                                                <constraint firstItem="494-RM-HlJ" firstAttribute="leading" secondItem="Dbb-U3-mcc" secondAttribute="leading" constant="196" id="1ar-nc-5tw"/>
+                                                <constraint firstItem="Rrj-vj-bIS" firstAttribute="top" secondItem="lhx-uh-coo" secondAttribute="bottom" constant="7" id="2rD-YP-dZW"/>
+                                                <constraint firstItem="FjD-He-CMH" firstAttribute="top" secondItem="tQE-2W-9Tr" secondAttribute="bottom" constant="7" id="3gh-ME-4FE"/>
+                                                <constraint firstItem="y48-c8-RrN" firstAttribute="leading" secondItem="Dbb-U3-mcc" secondAttribute="leading" constant="20" id="6Xb-VP-x39"/>
+                                                <constraint firstItem="y48-c8-RrN" firstAttribute="top" secondItem="Dbb-U3-mcc" secondAttribute="top" constant="10" id="74M-Lo-reK"/>
+                                                <constraint firstItem="rF6-ZO-bT3" firstAttribute="top" secondItem="FjD-He-CMH" secondAttribute="bottom" constant="12" id="8k7-yX-OFa"/>
+                                                <constraint firstItem="Qpe-Sz-sq4" firstAttribute="top" secondItem="Dbb-U3-mcc" secondAttribute="top" constant="7" id="9NA-it-hfY"/>
+                                                <constraint firstItem="cJz-kT-Rel" firstAttribute="top" secondItem="494-RM-HlJ" secondAttribute="top" id="AJQ-RH-CZb"/>
+                                                <constraint firstItem="lKq-hZ-WHJ" firstAttribute="leading" secondItem="Ou2-kY-ZFp" secondAttribute="trailing" constant="53" id="B1u-AH-aI4"/>
+                                                <constraint firstItem="3sA-fD-LxG" firstAttribute="top" secondItem="a1S-sb-Cdt" secondAttribute="bottom" constant="7" id="CGR-2a-ufV"/>
+                                                <constraint firstItem="a1S-sb-Cdt" firstAttribute="leading" secondItem="ayD-cG-WDk" secondAttribute="trailing" constant="10" id="I2j-7h-8DH"/>
+                                                <constraint firstItem="3sA-fD-LxG" firstAttribute="leading" secondItem="tQE-2W-9Tr" secondAttribute="trailing" constant="10" id="IZo-0S-17G"/>
+                                                <constraint firstItem="oIo-GY-DPn" firstAttribute="top" secondItem="Rrj-vj-bIS" secondAttribute="bottom" constant="44" id="Qtl-qB-bTN"/>
+                                                <constraint firstItem="Qpe-Sz-sq4" firstAttribute="leading" secondItem="y48-c8-RrN" secondAttribute="trailing" constant="10" id="TOf-j2-JtM"/>
+                                                <constraint firstItem="tQE-2W-9Tr" firstAttribute="top" secondItem="ayD-cG-WDk" secondAttribute="bottom" constant="7" id="TdO-eI-k0i"/>
+                                                <constraint firstItem="oIo-GY-DPn" firstAttribute="leading" secondItem="Ou2-kY-ZFp" secondAttribute="trailing" constant="3" id="ThG-qX-Dfj"/>
+                                                <constraint firstItem="Rrj-vj-bIS" firstAttribute="leading" secondItem="a1S-sb-Cdt" secondAttribute="trailing" constant="10" id="USY-uj-t73"/>
+                                                <constraint firstItem="a7v-9C-rqz" firstAttribute="leading" secondItem="Qpe-Sz-sq4" secondAttribute="trailing" constant="10" id="Uls-gG-OtH"/>
+                                                <constraint firstItem="494-RM-HlJ" firstAttribute="top" secondItem="3sA-fD-LxG" secondAttribute="bottom" constant="32" id="V8C-rK-OhS"/>
+                                                <constraint firstItem="Ou2-kY-ZFp" firstAttribute="top" secondItem="3sA-fD-LxG" secondAttribute="bottom" constant="19" id="VdR-Ic-cRw"/>
+                                                <constraint firstItem="a7v-9C-rqz" firstAttribute="top" secondItem="Dbb-U3-mcc" secondAttribute="top" constant="7" id="XQe-Q0-voj"/>
+                                                <constraint firstItem="clE-EA-l4i" firstAttribute="centerY" secondItem="rF6-ZO-bT3" secondAttribute="centerY" id="YKX-S8-0Pz"/>
+                                                <constraint firstItem="cJz-kT-Rel" firstAttribute="bottom" secondItem="lKq-hZ-WHJ" secondAttribute="bottom" id="dt7-3o-VI5"/>
+                                                <constraint firstItem="FjD-He-CMH" firstAttribute="leading" secondItem="tQE-2W-9Tr" secondAttribute="leading" id="etp-ZO-I11"/>
+                                                <constraint firstItem="tQE-2W-9Tr" firstAttribute="leading" secondItem="ayD-cG-WDk" secondAttribute="leading" id="mKI-dZ-enp"/>
+                                                <constraint firstItem="Ou2-kY-ZFp" firstAttribute="leading" secondItem="FjD-He-CMH" secondAttribute="trailing" constant="62" id="oTN-iu-luG"/>
+                                                <constraint firstItem="lhx-uh-coo" firstAttribute="top" secondItem="Dbb-U3-mcc" secondAttribute="top" constant="7" id="pK3-Vw-t7F"/>
+                                                <constraint firstItem="ayD-cG-WDk" firstAttribute="top" secondItem="Qpe-Sz-sq4" secondAttribute="bottom" constant="7" id="qa3-18-WXL"/>
+                                                <constraint firstItem="gkG-Hx-WLO" firstAttribute="top" secondItem="3sA-fD-LxG" secondAttribute="bottom" constant="7" id="rLI-2B-eAY"/>
+                                                <constraint firstItem="lhx-uh-coo" firstAttribute="leading" secondItem="a7v-9C-rqz" secondAttribute="trailing" constant="10" id="rzS-Pa-acb"/>
+                                                <constraint firstItem="ayD-cG-WDk" firstAttribute="leading" secondItem="Qpe-Sz-sq4" secondAttribute="leading" id="s9w-Mg-Ac6"/>
+                                                <constraint firstItem="clE-EA-l4i" firstAttribute="leading" secondItem="rF6-ZO-bT3" secondAttribute="trailing" id="vNF-0L-h0C"/>
+                                                <constraint firstItem="cJz-kT-Rel" firstAttribute="leading" secondItem="Dbb-U3-mcc" secondAttribute="leading" constant="281" id="wL3-ca-pA9"/>
+                                                <constraint firstItem="rF6-ZO-bT3" firstAttribute="leading" secondItem="FjD-He-CMH" secondAttribute="leading" id="zp2-aQ-ZDz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="udK-KO-7mL">
+                                        <rect key="frame" x="0.0" y="503.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="udK-KO-7mL" id="r59-Rb-ykd">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35k-4r-ZWE">
+                                                    <rect key="frame" x="20" y="0.0" width="50" height="43.5"/>
+                                                    <state key="normal" title="产地" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请选择产地" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AY4-wj-U7J">
+                                                    <rect key="frame" x="90" y="0.0" width="510" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="AY4-wj-U7J" secondAttribute="bottom" id="DT8-aE-pCt"/>
+                                                <constraint firstItem="35k-4r-ZWE" firstAttribute="leading" secondItem="r59-Rb-ykd" secondAttribute="leading" constant="20" id="IID-xe-ZG0"/>
+                                                <constraint firstItem="AY4-wj-U7J" firstAttribute="top" secondItem="r59-Rb-ykd" secondAttribute="top" id="TmN-Oi-bIi"/>
+                                                <constraint firstAttribute="bottom" secondItem="35k-4r-ZWE" secondAttribute="bottom" id="c78-34-1zI"/>
+                                                <constraint firstItem="AY4-wj-U7J" firstAttribute="leading" secondItem="35k-4r-ZWE" secondAttribute="trailing" constant="20" id="jWT-ye-ZpY"/>
+                                                <constraint firstAttribute="trailing" secondItem="AY4-wj-U7J" secondAttribute="trailing" id="weO-CP-c5E"/>
+                                                <constraint firstItem="35k-4r-ZWE" firstAttribute="top" secondItem="r59-Rb-ykd" secondAttribute="top" id="xcV-OZ-tpI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yGR-s9-7CJ">
+                                        <rect key="frame" x="0.0" y="547.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yGR-s9-7CJ" id="bSv-d1-qEH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyS-nr-wxs">
+                                                    <rect key="frame" x="20" y="0.0" width="36" height="43.5"/>
+                                                    <state key="normal" title="煤矿">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入煤矿" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bv3-4K-nMf">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="23w-E6-UlM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iyS-nr-wxs" firstAttribute="leading" secondItem="bSv-d1-qEH" secondAttribute="leading" constant="20" id="8Xp-k6-Wcs"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bv3-4K-nMf" secondAttribute="trailing" constant="10" id="LAN-EZ-6zk"/>
+                                                <constraint firstItem="iyS-nr-wxs" firstAttribute="top" secondItem="bSv-d1-qEH" secondAttribute="top" id="fdA-lk-yeR"/>
+                                                <constraint firstItem="Bv3-4K-nMf" firstAttribute="leading" secondItem="iyS-nr-wxs" secondAttribute="trailing" constant="60" id="hEG-5Y-oQE"/>
+                                                <constraint firstItem="Bv3-4K-nMf" firstAttribute="top" secondItem="bSv-d1-qEH" secondAttribute="top" id="qS7-Ja-rFc"/>
+                                                <constraint firstAttribute="bottom" secondItem="iyS-nr-wxs" secondAttribute="bottom" id="rJe-lg-chk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rPv-np-Vfw">
+                                        <rect key="frame" x="0.0" y="591.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rPv-np-Vfw" id="ZkH-0D-Stw">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOL-EI-bTA">
+                                                    <rect key="frame" x="20" y="0.0" width="68" height="43.5"/>
+                                                    <state key="normal" title="销售价" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入销售价" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TdS-Ip-wgq">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="3kA-EJ-JUf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz2-vi-dD3">
+                                                    <rect key="frame" x="573" y="11" width="17" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="kz2-vi-dD3" secondAttribute="trailing" constant="10" id="8U1-Co-b7x"/>
+                                                <constraint firstItem="kz2-vi-dD3" firstAttribute="centerY" secondItem="ZkH-0D-Stw" secondAttribute="centerY" id="8kP-QQ-yzP"/>
+                                                <constraint firstItem="TdS-Ip-wgq" firstAttribute="top" secondItem="ZkH-0D-Stw" secondAttribute="top" id="S2t-lN-0W1"/>
+                                                <constraint firstItem="TdS-Ip-wgq" firstAttribute="leading" secondItem="HOL-EI-bTA" secondAttribute="trailing" constant="28" id="SLV-pH-OVD"/>
+                                                <constraint firstAttribute="bottom" secondItem="HOL-EI-bTA" secondAttribute="bottom" id="WuS-fl-c96"/>
+                                                <constraint firstItem="HOL-EI-bTA" firstAttribute="top" secondItem="ZkH-0D-Stw" secondAttribute="top" id="bz4-jM-1T3"/>
+                                                <constraint firstAttribute="trailing" secondItem="TdS-Ip-wgq" secondAttribute="trailing" constant="10" id="pLh-kN-gW3"/>
+                                                <constraint firstItem="HOL-EI-bTA" firstAttribute="leading" secondItem="ZkH-0D-Stw" secondAttribute="leading" constant="20" id="xQl-93-6bc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HA1-eI-PMM">
+                                        <rect key="frame" x="0.0" y="635.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HA1-eI-PMM" id="0Pq-3D-STO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqk-HO-JHc">
+                                                    <rect key="frame" x="20" y="0.0" width="122" height="43.5"/>
+                                                    <state key="normal" title="预计日供货量" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入预计日供货量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-br-0t9">
+                                                    <rect key="frame" x="170" y="0.0" width="420" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="0jZ-hx-2W9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYf-cK-35k">
+                                                    <rect key="frame" x="573" y="11" width="17" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CYf-cK-35k" firstAttribute="centerY" secondItem="0Pq-3D-STO" secondAttribute="centerY" id="1IU-Ay-Blz"/>
+                                                <constraint firstItem="Zqk-HO-JHc" firstAttribute="leading" secondItem="0Pq-3D-STO" secondAttribute="leading" constant="20" id="2P9-xp-jgG"/>
+                                                <constraint firstItem="qfS-br-0t9" firstAttribute="leading" secondItem="Zqk-HO-JHc" secondAttribute="trailing" constant="28" id="8LE-Mg-X10"/>
+                                                <constraint firstItem="qfS-br-0t9" firstAttribute="top" secondItem="0Pq-3D-STO" secondAttribute="top" id="8ZM-UW-TAq"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zqk-HO-JHc" secondAttribute="bottom" id="TGf-Cc-ElA"/>
+                                                <constraint firstAttribute="trailing" secondItem="CYf-cK-35k" secondAttribute="trailing" constant="10" id="dgG-d4-tLq"/>
+                                                <constraint firstAttribute="trailing" secondItem="qfS-br-0t9" secondAttribute="trailing" constant="10" id="ebD-ls-wXP"/>
+                                                <constraint firstItem="Zqk-HO-JHc" firstAttribute="top" secondItem="0Pq-3D-STO" secondAttribute="top" id="mCB-tx-WEW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="YQJ-g3-5iA">
+                                        <rect key="frame" x="0.0" y="679.5" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YQJ-g3-5iA" id="Si8-92-rpU">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWq-Qt-miO">
+                                                    <rect key="frame" x="20" y="10" width="86" height="22"/>
+                                                    <state key="normal" title="付款要求" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" tag="60" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvj-zW-sKS">
+                                                    <rect key="frame" x="116" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="GkC-PB-Cwm"/>
+                                                        <constraint firstAttribute="height" constant="29.5" id="hzQ-FO-5Sh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="线上支付" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="单一煤">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="oaz-Ao-dxa"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="61" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-Iz-NaM">
+                                                    <rect key="frame" x="196" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="0zd-cV-lOv"/>
+                                                        <constraint firstAttribute="height" constant="29.5" id="boT-Zx-1IQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="承兑汇票" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="配煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="Z1B-fC-gkV"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="62" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFZ-1p-2eh">
+                                                    <rect key="frame" x="276" y="7" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29.5" id="Sar-dX-f7G"/>
+                                                        <constraint firstAttribute="width" constant="70" id="mvk-Lk-OXV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="线下支付" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="配煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="cHq-dO-T4A"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="63" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEH-gF-QaI">
+                                                    <rect key="frame" x="116" y="43" width="70" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="1cZ-GN-7GR"/>
+                                                        <constraint firstAttribute="height" constant="29.5" id="cxa-Hx-Xo9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal" title="可压货款" backgroundImage="筛选－灰框">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <state key="highlighted" title="气化煤" backgroundImage="筛选－绿框">
+                                                        <color key="titleColor" red="0.1764705882" green="0.72549019609999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yongTuBtn1:" destination="feI-Mx-zo0" eventType="touchUpInside" id="frp-hk-Y3A"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZEH-gF-QaI" firstAttribute="leading" secondItem="Jvj-zW-sKS" secondAttribute="leading" id="Gfx-Qo-fpb"/>
+                                                <constraint firstItem="kWq-Qt-miO" firstAttribute="leading" secondItem="Si8-92-rpU" secondAttribute="leading" constant="20" id="Ouf-yA-MPX"/>
+                                                <constraint firstItem="kWq-Qt-miO" firstAttribute="top" secondItem="Si8-92-rpU" secondAttribute="top" constant="10" id="Q6D-qf-cfK"/>
+                                                <constraint firstItem="P5A-Iz-NaM" firstAttribute="leading" secondItem="Jvj-zW-sKS" secondAttribute="trailing" constant="10" id="RUf-5T-G3t"/>
+                                                <constraint firstItem="P5A-Iz-NaM" firstAttribute="top" secondItem="Si8-92-rpU" secondAttribute="top" constant="7" id="ffH-lX-m92"/>
+                                                <constraint firstItem="Jvj-zW-sKS" firstAttribute="leading" secondItem="kWq-Qt-miO" secondAttribute="trailing" constant="10" id="gop-xY-14Y"/>
+                                                <constraint firstItem="xFZ-1p-2eh" firstAttribute="leading" secondItem="P5A-Iz-NaM" secondAttribute="trailing" constant="10" id="nwE-Cw-gt0"/>
+                                                <constraint firstItem="xFZ-1p-2eh" firstAttribute="top" secondItem="Si8-92-rpU" secondAttribute="top" constant="7" id="qu4-8D-1c5"/>
+                                                <constraint firstItem="ZEH-gF-QaI" firstAttribute="top" secondItem="Jvj-zW-sKS" secondAttribute="bottom" constant="7" id="sUx-6k-sWP"/>
+                                                <constraint firstItem="Jvj-zW-sKS" firstAttribute="top" secondItem="Si8-92-rpU" secondAttribute="top" constant="7" id="zfE-Xc-tpT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="NMv-fY-LhJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="975-Ng-jzw">
+                                        <rect key="frame" x="0.0" y="807.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="975-Ng-jzw" id="Uxo-fb-D9n">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="煤炭指标" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP1-wn-bLB">
+                                                    <rect key="frame" x="20" y="0.0" width="80" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="RP1-wn-bLB" secondAttribute="bottom" id="bk3-oP-Jmt"/>
+                                                <constraint firstItem="RP1-wn-bLB" firstAttribute="leading" secondItem="Uxo-fb-D9n" secondAttribute="leading" constant="20" id="uSv-5G-0qi"/>
+                                                <constraint firstItem="RP1-wn-bLB" firstAttribute="top" secondItem="Uxo-fb-D9n" secondAttribute="top" id="zeY-sq-kwd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lOb-LT-iiS">
+                                        <rect key="frame" x="0.0" y="851.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lOb-LT-iiS" id="bxa-be-ZVB">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xim-ky-UEr">
+                                                    <rect key="frame" x="20" y="0.0" width="50" height="43.5"/>
+                                                    <state key="normal" title="热值" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入热值" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fub-tY-leS">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="P03-Yd-jeo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-ne-96a">
+                                                    <rect key="frame" x="556" y="11" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="fub-tY-leS" secondAttribute="trailing" constant="10" id="04l-6m-5sm"/>
+                                                <constraint firstItem="fub-tY-leS" firstAttribute="leading" secondItem="Xim-ky-UEr" secondAttribute="trailing" constant="46" id="7oN-UM-tXu"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xim-ky-UEr" secondAttribute="bottom" id="RaG-0h-BQp"/>
+                                                <constraint firstItem="Xim-ky-UEr" firstAttribute="leading" secondItem="bxa-be-ZVB" secondAttribute="leading" constant="20" id="Ydg-jo-Bv4"/>
+                                                <constraint firstItem="Xim-ky-UEr" firstAttribute="top" secondItem="bxa-be-ZVB" secondAttribute="top" id="hJT-To-7il"/>
+                                                <constraint firstItem="fub-tY-leS" firstAttribute="top" secondItem="bxa-be-ZVB" secondAttribute="top" id="rc8-X6-aQb"/>
+                                                <constraint firstItem="s7Q-ne-96a" firstAttribute="centerY" secondItem="bxa-be-ZVB" secondAttribute="centerY" id="xdR-19-PR0"/>
+                                                <constraint firstAttribute="trailing" secondItem="s7Q-ne-96a" secondAttribute="trailing" constant="10" id="yZl-1Q-rOt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gsR-Oi-uIb">
+                                        <rect key="frame" x="0.0" y="895.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gsR-Oi-uIb" id="kMp-MK-l0f">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1u-cv-1JJ">
+                                                    <rect key="frame" x="20" y="0.0" width="68" height="43.5"/>
+                                                    <state key="normal" title="氢含量" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入氢含量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLK-pl-MJw">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="BYm-D8-Zan"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZ0-Ab-1Ca">
+                                                    <rect key="frame" x="577" y="11" width="13" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="RZ0-Ab-1Ca" secondAttribute="trailing" constant="10" id="G6j-yj-fSL"/>
+                                                <constraint firstItem="X1u-cv-1JJ" firstAttribute="leading" secondItem="kMp-MK-l0f" secondAttribute="leading" constant="20" id="PKL-c1-gjA"/>
+                                                <constraint firstAttribute="bottom" secondItem="X1u-cv-1JJ" secondAttribute="bottom" id="SSD-nG-SED"/>
+                                                <constraint firstItem="RZ0-Ab-1Ca" firstAttribute="centerY" secondItem="kMp-MK-l0f" secondAttribute="centerY" id="deL-Wp-rt6"/>
+                                                <constraint firstItem="X1u-cv-1JJ" firstAttribute="top" secondItem="kMp-MK-l0f" secondAttribute="top" id="fH9-Sb-J1A"/>
+                                                <constraint firstItem="QLK-pl-MJw" firstAttribute="top" secondItem="kMp-MK-l0f" secondAttribute="top" id="h2R-SH-nFZ"/>
+                                                <constraint firstItem="QLK-pl-MJw" firstAttribute="leading" secondItem="X1u-cv-1JJ" secondAttribute="trailing" constant="28" id="svc-rB-VMg"/>
+                                                <constraint firstAttribute="trailing" secondItem="QLK-pl-MJw" secondAttribute="trailing" constant="10" id="tV3-xc-9dz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hhi-z7-FTL">
+                                        <rect key="frame" x="0.0" y="939.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hhi-z7-FTL" id="xKe-9t-ldr">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-XY-4sg">
+                                                    <rect key="frame" x="20" y="0.0" width="68" height="43.5"/>
+                                                    <state key="normal" title="挥发分" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入挥发分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jfH-Qm-j0M">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="zDa-Gh-YzJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXA-He-XSx">
+                                                    <rect key="frame" x="577" y="11" width="13" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QAh-XY-4sg" firstAttribute="top" secondItem="xKe-9t-ldr" secondAttribute="top" id="9Xs-Mo-hFe"/>
+                                                <constraint firstItem="QAh-XY-4sg" firstAttribute="leading" secondItem="xKe-9t-ldr" secondAttribute="leading" constant="20" id="Lrq-Nk-Qq4"/>
+                                                <constraint firstItem="jfH-Qm-j0M" firstAttribute="leading" secondItem="QAh-XY-4sg" secondAttribute="trailing" constant="28" id="TYc-j4-XcY"/>
+                                                <constraint firstItem="bXA-He-XSx" firstAttribute="centerY" secondItem="xKe-9t-ldr" secondAttribute="centerY" id="eHz-MF-ypf"/>
+                                                <constraint firstAttribute="trailing" secondItem="bXA-He-XSx" secondAttribute="trailing" constant="10" id="lDJ-HX-cgS"/>
+                                                <constraint firstAttribute="trailing" secondItem="jfH-Qm-j0M" secondAttribute="trailing" constant="10" id="r6K-NW-YCN"/>
+                                                <constraint firstAttribute="bottom" secondItem="QAh-XY-4sg" secondAttribute="bottom" id="sxU-Rh-Ly6"/>
+                                                <constraint firstItem="jfH-Qm-j0M" firstAttribute="top" secondItem="xKe-9t-ldr" secondAttribute="top" id="yla-ub-Xxb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jVk-6S-4Vu">
+                                        <rect key="frame" x="0.0" y="983.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jVk-6S-4Vu" id="5g5-K9-wga">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbV-xW-Z2T">
+                                                    <rect key="frame" x="20" y="0.0" width="50" height="43.5"/>
+                                                    <state key="normal" title="全硫" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入全硫" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5N-sR-LCj">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="6ez-pb-DpC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLw-f5-5ky">
+                                                    <rect key="frame" x="577" y="11" width="13" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZLw-f5-5ky" firstAttribute="centerY" secondItem="5g5-K9-wga" secondAttribute="centerY" id="GJq-tg-NuI"/>
+                                                <constraint firstItem="L5N-sR-LCj" firstAttribute="top" secondItem="5g5-K9-wga" secondAttribute="top" id="Sm8-3W-YAh"/>
+                                                <constraint firstItem="tbV-xW-Z2T" firstAttribute="top" secondItem="5g5-K9-wga" secondAttribute="top" id="V1y-60-tgH"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZLw-f5-5ky" secondAttribute="trailing" constant="10" id="fcr-4j-ZGd"/>
+                                                <constraint firstAttribute="bottom" secondItem="tbV-xW-Z2T" secondAttribute="bottom" id="gDe-Pv-2B9"/>
+                                                <constraint firstItem="L5N-sR-LCj" firstAttribute="leading" secondItem="tbV-xW-Z2T" secondAttribute="trailing" constant="46" id="ydc-7j-glj"/>
+                                                <constraint firstItem="tbV-xW-Z2T" firstAttribute="leading" secondItem="5g5-K9-wga" secondAttribute="leading" constant="20" id="yw4-Al-H6m"/>
+                                                <constraint firstAttribute="trailing" secondItem="L5N-sR-LCj" secondAttribute="trailing" constant="10" id="ywd-kp-Yv6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ypN-NW-Oag">
+                                        <rect key="frame" x="0.0" y="1027.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypN-NW-Oag" id="zWO-7r-6RZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4P-Vr-tQK">
+                                                    <rect key="frame" x="20" y="0.0" width="50" height="43.5"/>
+                                                    <state key="normal" title="灰分" image="xinghao">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入灰分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-N2-0X1">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="Edw-qt-FN6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqR-PR-e30">
+                                                    <rect key="frame" x="577" y="11" width="13" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ep9-N2-0X1" secondAttribute="trailing" constant="10" id="3VW-UK-nv7"/>
+                                                <constraint firstItem="Ep9-N2-0X1" firstAttribute="top" secondItem="zWO-7r-6RZ" secondAttribute="top" id="7dd-am-q33"/>
+                                                <constraint firstItem="Y4P-Vr-tQK" firstAttribute="top" secondItem="zWO-7r-6RZ" secondAttribute="top" id="Fpl-iC-iio"/>
+                                                <constraint firstItem="kqR-PR-e30" firstAttribute="centerY" secondItem="zWO-7r-6RZ" secondAttribute="centerY" id="Q1l-GZ-qMG"/>
+                                                <constraint firstItem="Y4P-Vr-tQK" firstAttribute="leading" secondItem="zWO-7r-6RZ" secondAttribute="leading" constant="20" id="ff4-xJ-lkc"/>
+                                                <constraint firstAttribute="trailing" secondItem="kqR-PR-e30" secondAttribute="trailing" constant="10" id="gR7-Dl-r6A"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y4P-Vr-tQK" secondAttribute="bottom" id="qQw-d3-YMw"/>
+                                                <constraint firstItem="Ep9-N2-0X1" firstAttribute="leading" secondItem="Y4P-Vr-tQK" secondAttribute="trailing" constant="46" id="r7y-sO-pnk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zyw-CB-ibh">
+                                        <rect key="frame" x="0.0" y="1071.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zyw-CB-ibh" id="6XY-G4-mlX">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8O9-KB-VPY">
+                                                    <rect key="frame" x="20" y="0.0" width="54" height="43.5"/>
+                                                    <state key="normal" title="全水分">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入全水分" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiV-V1-pJ0">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="Jsd-7F-h0F"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I06-3o-Emm">
+                                                    <rect key="frame" x="577" y="11" width="13" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RiV-V1-pJ0" firstAttribute="leading" secondItem="8O9-KB-VPY" secondAttribute="trailing" constant="42" id="BZ3-zc-cqS"/>
+                                                <constraint firstItem="8O9-KB-VPY" firstAttribute="leading" secondItem="6XY-G4-mlX" secondAttribute="leading" constant="20" id="CCW-ee-YcX"/>
+                                                <constraint firstItem="RiV-V1-pJ0" firstAttribute="top" secondItem="6XY-G4-mlX" secondAttribute="top" id="CZZ-Wz-eZE"/>
+                                                <constraint firstAttribute="trailing" secondItem="RiV-V1-pJ0" secondAttribute="trailing" constant="10" id="Fda-IX-ATq"/>
+                                                <constraint firstItem="8O9-KB-VPY" firstAttribute="top" secondItem="6XY-G4-mlX" secondAttribute="top" id="QsZ-mU-RqZ"/>
+                                                <constraint firstItem="I06-3o-Emm" firstAttribute="centerY" secondItem="6XY-G4-mlX" secondAttribute="centerY" id="ULS-jw-M4Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="I06-3o-Emm" secondAttribute="trailing" constant="10" id="b1U-P0-oba"/>
+                                                <constraint firstAttribute="bottom" secondItem="8O9-KB-VPY" secondAttribute="bottom" id="edt-lZ-rYF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xmQ-FO-Iiv">
+                                        <rect key="frame" x="0.0" y="1115.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xmQ-FO-Iiv" id="0Z8-bb-7LY">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfy-PT-9Rq">
+                                                    <rect key="frame" x="20" y="0.0" width="72" height="43.5"/>
+                                                    <state key="normal" title="焦渣特性">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入焦渣特性" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJe-Ja-oeR">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="v1r-ou-nuB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tfy-PT-9Rq" firstAttribute="top" secondItem="0Z8-bb-7LY" secondAttribute="top" id="0rZ-3E-6nP"/>
+                                                <constraint firstItem="VJe-Ja-oeR" firstAttribute="top" secondItem="0Z8-bb-7LY" secondAttribute="top" id="2Th-Iz-csI"/>
+                                                <constraint firstItem="VJe-Ja-oeR" firstAttribute="leading" secondItem="tfy-PT-9Rq" secondAttribute="trailing" constant="24" id="EHk-he-lUz"/>
+                                                <constraint firstAttribute="trailing" secondItem="VJe-Ja-oeR" secondAttribute="trailing" constant="10" id="OXe-Pm-ltg"/>
+                                                <constraint firstAttribute="bottom" secondItem="tfy-PT-9Rq" secondAttribute="bottom" id="ktM-Af-GJI"/>
+                                                <constraint firstItem="tfy-PT-9Rq" firstAttribute="leading" secondItem="0Z8-bb-7LY" secondAttribute="leading" constant="20" id="qIC-VJ-yhl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="N07-t0-3Ek">
+                                        <rect key="frame" x="0.0" y="1159.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N07-t0-3Ek" id="Oln-DF-nvd">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vj-Ce-06Q">
+                                                    <rect key="frame" x="20" y="0.0" width="54" height="43.5"/>
+                                                    <state key="normal" title="固定碳">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入固定碳" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTl-Aq-ui9">
+                                                    <rect key="frame" x="116" y="0.0" width="474" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="rqs-1q-VrU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eL5-YD-B2k">
+                                                    <rect key="frame" x="577" y="11" width="13" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XTl-Aq-ui9" firstAttribute="top" secondItem="Oln-DF-nvd" secondAttribute="top" id="0YC-fZ-Z7C"/>
+                                                <constraint firstItem="5Vj-Ce-06Q" firstAttribute="top" secondItem="Oln-DF-nvd" secondAttribute="top" id="AeK-2G-ca7"/>
+                                                <constraint firstAttribute="trailing" secondItem="XTl-Aq-ui9" secondAttribute="trailing" constant="10" id="BxU-3H-orl"/>
+                                                <constraint firstAttribute="trailing" secondItem="eL5-YD-B2k" secondAttribute="trailing" constant="10" id="Mi0-9P-F2n"/>
+                                                <constraint firstItem="5Vj-Ce-06Q" firstAttribute="leading" secondItem="Oln-DF-nvd" secondAttribute="leading" constant="20" id="Qrz-Mk-ngQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Vj-Ce-06Q" secondAttribute="bottom" id="X6e-dy-OAq"/>
+                                                <constraint firstItem="XTl-Aq-ui9" firstAttribute="leading" secondItem="5Vj-Ce-06Q" secondAttribute="trailing" constant="42" id="uYJ-My-Tb2"/>
+                                                <constraint firstItem="eL5-YD-B2k" firstAttribute="centerY" secondItem="Oln-DF-nvd" secondAttribute="centerY" id="vAS-2a-rTa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="feI-Mx-zo0" id="VJp-NH-2Rd"/>
+                            <outlet property="delegate" destination="feI-Mx-zo0" id="3Ux-vQ-h6j"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cangDi" destination="AY4-wj-U7J" id="QbF-7h-h3R"/>
+                        <outlet property="chiCunLbl" destination="clE-EA-l4i" id="kk6-J0-BmI"/>
+                        <outlet property="coalNameText" destination="KTI-gG-Tv9" id="Rw6-vM-qRD"/>
+                        <outlet property="gongHuoLiang" destination="qfS-br-0t9" id="3Yt-c3-UMH"/>
+                        <outlet property="haomi1" destination="gkG-Hx-WLO" id="JhY-ew-2Mq"/>
+                        <outlet property="haomi2" destination="oIo-GY-DPn" id="n2u-vi-Og4"/>
+                        <outlet property="jiaGongBtn1" destination="Vsj-JI-Kbb" id="EwA-hb-qXb"/>
+                        <outlet property="jiaGongBtn2" destination="QyK-Cv-TyI" id="Rcr-N8-Guy"/>
+                        <outlet property="laiYuanBtn1" destination="Ulv-nB-RC2" id="hux-b0-YJw"/>
+                        <outlet property="laiYuanBtn2" destination="4cS-aN-C5g" id="4ot-UA-9Ns"/>
+                        <outlet property="liDu1" destination="Qpe-Sz-sq4" id="567-By-rba"/>
+                        <outlet property="liDu2" destination="a7v-9C-rqz" id="ns4-su-ujS"/>
+                        <outlet property="liDu3" destination="lhx-uh-coo" id="W49-eU-PCX"/>
+                        <outlet property="liDu4" destination="ayD-cG-WDk" id="evI-ud-MuH"/>
+                        <outlet property="liDu5" destination="a1S-sb-Cdt" id="xzC-zA-J8O"/>
+                        <outlet property="liDu6" destination="Rrj-vj-bIS" id="nLs-h7-bay"/>
+                        <outlet property="liDu7" destination="tQE-2W-9Tr" id="kHB-OB-qB1"/>
+                        <outlet property="liDu8" destination="3sA-fD-LxG" id="eAe-k8-OPG"/>
+                        <outlet property="liDu9" destination="FjD-He-CMH" id="Wjq-jH-qSB"/>
+                        <outlet property="meiKuang" destination="Bv3-4K-nMf" id="N6G-tg-mfh"/>
+                        <outlet property="xiaoShouJia" destination="TdS-Ip-wgq" id="v5Q-sZ-3Vm"/>
+                        <outlet property="yaoqiu1" destination="Jvj-zW-sKS" id="qt3-XR-96Z"/>
+                        <outlet property="yaoqiu2" destination="P5A-Iz-NaM" id="3sg-AA-YH4"/>
+                        <outlet property="yaoqiu3" destination="xFZ-1p-2eh" id="9r0-7m-aVQ"/>
+                        <outlet property="yaoqiu4" destination="ZEH-gF-QaI" id="mLG-kK-DQk"/>
+                        <outlet property="yongTuBtn1" destination="oFh-xQ-KBO" id="zU2-17-Z4a"/>
+                        <outlet property="yongTuBtn2" destination="1nP-5T-wXn" id="cp9-gh-o3S"/>
+                        <outlet property="yongTuBtn3" destination="WV2-od-C6Z" id="VeE-hB-Ibu"/>
+                        <outlet property="zhibiao1" destination="fub-tY-leS" id="s0g-7q-9s0"/>
+                        <outlet property="zhibiao2" destination="QLK-pl-MJw" id="2OQ-07-yDd"/>
+                        <outlet property="zhibiao3" destination="jfH-Qm-j0M" id="JU3-dv-fDE"/>
+                        <outlet property="zhibiao4" destination="L5N-sR-LCj" id="uE9-f1-JTR"/>
+                        <outlet property="zhibiao5" destination="Ep9-N2-0X1" id="0yA-SM-8wQ"/>
+                        <outlet property="zhibiao6" destination="RiV-V1-pJ0" id="Q6J-qJ-lys"/>
+                        <outlet property="zhibiao7" destination="VJe-Ja-oeR" id="VVg-xe-TUp"/>
+                        <outlet property="zhibiao8" destination="XTl-Aq-ui9" id="khc-fz-1dg"/>
+                        <outlet property="zongLei1" destination="EBR-gM-p1S" id="vAR-uY-qZu"/>
+                        <outlet property="zongLei2" destination="SrT-OG-lIH" id="bm6-lE-4ME"/>
+                        <outlet property="zongLei3" destination="2EP-Ai-E9c" id="8Fj-9g-mI9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCi-S3-f0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1551" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xinghao" width="14" height="13"/>
+        <image name="筛选－灰框" width="127" height="42"/>
+        <image name="筛选－绿框" width="127" height="42"/>
+    </resources>
+</document>

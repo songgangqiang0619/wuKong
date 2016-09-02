@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>intro</key>
+		<string>七月渤海。。。</string>
+		<key>time</key>
+		<string>今天</string>
+		<key>name</key>
+		<string>消息中心(0)</string>
+		<key>icon</key>
+		<string>me_exit</string>
+	</dict>
+	<dict>
+		<key>intro</key>
+		<string>这里共有0条新信息</string>
+		<key>time</key>
+		<string>昨天</string>
+		<key>name</key>
+		<string>待完成采购订单(0)</string>
+		<key>icon</key>
+		<string>me_exit</string>
+	</dict>
+	<dict>
+		<key>intro</key>
+		<string>这里共有0条新信息</string>
+		<key>time</key>
+		<string>今天</string>
+		<key>name</key>
+		<string>待完成销售订单(0)</string>
+		<key>icon</key>
+		<string>me_exit</string>
+	</dict>
+	<dict>
+		<key>intro</key>
+		<string>这里共有0条新信息</string>
+		<key>time</key>
+		<string>今天</string>
+		<key>name</key>
+		<string>待支付(0)</string>
+		<key>icon</key>
+		<string>me_exit</string>
+	</dict>
+	<dict>
+		<key>intro</key>
+		<string>这里共有0条新信息</string>
+		<key>time</key>
+		<string>今天</string>
+		<key>name</key>
+		<string>待确认订单(0)</string>
+		<key>icon</key>
+		<string>me_exit</string>
+	</dict>
+	<dict>
+		<key>intro</key>
+		<string>这里共有0条新信息</string>
+		<key>time</key>
+		<string>今天</string>
+		<key>name</key>
+		<string>供应商待评价(0)</string>
+		<key>icon</key>
+		<string>me_exit</string>
+	</dict>
+</array>
+</plist>

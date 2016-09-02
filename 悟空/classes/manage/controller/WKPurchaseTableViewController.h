@@ -1,0 +1,15 @@
+//
+//  WKPurchaseTableViewController.h
+//  悟空
+//
+//  Created by 宋钢强 on 16/8/10.
+//  Copyright © 2016年 alibaba. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface WKPurchaseTableViewController : UITableViewController
+
+@property (nonatomic, strong) NSDictionary *dic;
+
+@end

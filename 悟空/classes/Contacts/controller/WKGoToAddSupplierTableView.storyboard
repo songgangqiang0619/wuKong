@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YGU-Ke-Ras">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Go To Add View Controller-->
+        <scene sceneID="h9t-sO-JZo">
+            <objects>
+                <viewController id="YGU-Ke-Ras" customClass="WKGoToAddViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sum-lp-E6h"/>
+                        <viewControllerLayoutGuide type="bottom" id="GEu-iG-N62"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1tM-oy-WZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Kc-Bl-ldF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="W0k-mz-KQQ">
+                                        <rect key="frame" x="10" y="10" width="580" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJM-gh-Y1X">
+                                        <rect key="frame" x="0.0" y="59" width="600" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请我的供应商，让购买不是难事" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-WG-b6h">
+                                                <rect key="frame" x="20" y="10" width="255" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="通讯录－电话" translatesAutoresizingMaskIntoConstraints="NO" id="TP1-DN-3AX">
+                                                <rect key="frame" x="546" y="0.0" width="34" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="34" id="j9d-V2-YXy"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.77730444190000003" green="1" blue="0.31567077919999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TP1-DN-3AX" secondAttribute="bottom" id="5Vd-nO-JuF"/>
+                                            <constraint firstItem="AWx-WG-b6h" firstAttribute="top" secondItem="KJM-gh-Y1X" secondAttribute="top" constant="10" id="73Y-hH-95b"/>
+                                            <constraint firstAttribute="trailing" secondItem="TP1-DN-3AX" secondAttribute="trailing" constant="20" id="8zJ-Wk-Dsx"/>
+                                            <constraint firstItem="AWx-WG-b6h" firstAttribute="leading" secondItem="KJM-gh-Y1X" secondAttribute="leading" constant="20" id="Klp-yY-8Bq"/>
+                                            <constraint firstItem="AWx-WG-b6h" firstAttribute="centerY" secondItem="KJM-gh-Y1X" secondAttribute="centerY" id="VUS-YY-Y8s"/>
+                                            <constraint firstItem="TP1-DN-3AX" firstAttribute="top" secondItem="KJM-gh-Y1X" secondAttribute="top" id="kVz-jz-shD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.135361597" green="1" blue="0.30768165349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="W0k-mz-KQQ" firstAttribute="leading" secondItem="0Kc-Bl-ldF" secondAttribute="leading" constant="10" id="3Ds-g1-P7e"/>
+                                    <constraint firstItem="W0k-mz-KQQ" firstAttribute="top" secondItem="0Kc-Bl-ldF" secondAttribute="top" constant="10" id="8xd-N1-upi"/>
+                                    <constraint firstAttribute="height" constant="100" id="BrY-jB-NRL"/>
+                                    <constraint firstItem="KJM-gh-Y1X" firstAttribute="top" secondItem="W0k-mz-KQQ" secondAttribute="bottom" constant="5" id="P7w-QA-K23"/>
+                                    <constraint firstAttribute="trailing" secondItem="KJM-gh-Y1X" secondAttribute="trailing" id="S0o-dc-Tiw"/>
+                                    <constraint firstItem="KJM-gh-Y1X" firstAttribute="leading" secondItem="0Kc-Bl-ldF" secondAttribute="leading" id="UM6-Pz-jLI"/>
+                                    <constraint firstAttribute="trailing" secondItem="W0k-mz-KQQ" secondAttribute="trailing" constant="10" id="nxg-IB-I06"/>
+                                    <constraint firstAttribute="bottom" secondItem="KJM-gh-Y1X" secondAttribute="bottom" id="wS8-RH-byg"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PZ3-re-NDY">
+                                <rect key="frame" x="0.0" y="100" width="600" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="qQ2-Uw-AXv">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQ2-Uw-AXv" id="Mpw-rp-zdI">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="榆林泰发详矿业公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-Wz-rb9">
+                                                    <rect key="frame" x="20" y="10" width="153" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共有0款煤炭产品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsn-5d-9BE">
+                                                    <rect key="frame" x="20" y="36" width="99.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.7389357003" green="0.7389357003" blue="0.7389357003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年供货量：0万吨/年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygJ-Jb-4as">
+                                                    <rect key="frame" x="20" y="57" width="117" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.7389357003" green="0.7389357003" blue="0.7389357003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陕西榆林或呢个" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wo-21-KFe">
+                                                    <rect key="frame" x="20" y="78" width="91" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.7389357003" green="0.7389357003" blue="0.7389357003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrS-re-6Bl">
+                                                    <rect key="frame" x="0.0" y="99" width="600" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="kiJ-id-6Ia"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaf-4n-nTz">
+                                                    <rect key="frame" x="475" y="105" width="105" height="30"/>
+                                                    <state key="normal" title="成为我的供应商"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVS-6B-XRY">
+                                                    <rect key="frame" x="380" y="105" width="75" height="30"/>
+                                                    <state key="normal" title="联系供应商"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ygJ-Jb-4as" firstAttribute="leading" secondItem="Mpw-rp-zdI" secondAttribute="leading" constant="20" id="3g4-f8-fks"/>
+                                                <constraint firstItem="wsn-5d-9BE" firstAttribute="top" secondItem="Y2D-Wz-rb9" secondAttribute="bottom" constant="5" id="Bch-jQ-OCC"/>
+                                                <constraint firstItem="Y2D-Wz-rb9" firstAttribute="top" secondItem="Mpw-rp-zdI" secondAttribute="top" constant="10" id="EJQ-St-pVR"/>
+                                                <constraint firstItem="ygJ-Jb-4as" firstAttribute="top" secondItem="wsn-5d-9BE" secondAttribute="bottom" constant="5" id="QgD-ad-Itv"/>
+                                                <constraint firstItem="rrS-re-6Bl" firstAttribute="top" secondItem="7wo-21-KFe" secondAttribute="bottom" constant="5" id="Wtn-6O-SEg"/>
+                                                <constraint firstItem="Xaf-4n-nTz" firstAttribute="top" secondItem="rrS-re-6Bl" secondAttribute="bottom" constant="5" id="XIT-26-M8X"/>
+                                                <constraint firstItem="wsn-5d-9BE" firstAttribute="leading" secondItem="Mpw-rp-zdI" secondAttribute="leading" constant="20" id="Z6W-Kg-pim"/>
+                                                <constraint firstAttribute="trailing" secondItem="rrS-re-6Bl" secondAttribute="trailing" id="aIw-z4-Dgr"/>
+                                                <constraint firstItem="7wo-21-KFe" firstAttribute="leading" secondItem="Mpw-rp-zdI" secondAttribute="leading" constant="20" id="dSi-Qc-s3x"/>
+                                                <constraint firstItem="Xaf-4n-nTz" firstAttribute="centerY" secondItem="hVS-6B-XRY" secondAttribute="centerY" id="hDs-fu-eVt"/>
+                                                <constraint firstItem="Y2D-Wz-rb9" firstAttribute="leading" secondItem="Mpw-rp-zdI" secondAttribute="leading" constant="20" id="i4Q-nQ-dNc"/>
+                                                <constraint firstItem="7wo-21-KFe" firstAttribute="top" secondItem="ygJ-Jb-4as" secondAttribute="bottom" constant="5" id="jrx-bu-yee"/>
+                                                <constraint firstItem="rrS-re-6Bl" firstAttribute="leading" secondItem="Mpw-rp-zdI" secondAttribute="leading" id="mep-qR-zGI"/>
+                                                <constraint firstItem="Xaf-4n-nTz" firstAttribute="leading" secondItem="hVS-6B-XRY" secondAttribute="trailing" constant="20" id="oHl-6E-nxG"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xaf-4n-nTz" secondAttribute="trailing" constant="20" id="sNK-HI-brf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0Kc-Bl-ldF" secondAttribute="trailing" id="2bH-gf-Fhe"/>
+                            <constraint firstAttribute="trailing" secondItem="PZ3-re-NDY" secondAttribute="trailing" id="39B-bT-VLo"/>
+                            <constraint firstItem="0Kc-Bl-ldF" firstAttribute="leading" secondItem="1tM-oy-WZ0" secondAttribute="leading" id="Bf7-g3-6ag"/>
+                            <constraint firstItem="GEu-iG-N62" firstAttribute="top" secondItem="PZ3-re-NDY" secondAttribute="bottom" id="Pwo-g8-Je5"/>
+                            <constraint firstItem="0Kc-Bl-ldF" firstAttribute="top" secondItem="1tM-oy-WZ0" secondAttribute="top" id="i3m-R4-DfK"/>
+                            <constraint firstItem="PZ3-re-NDY" firstAttribute="leading" secondItem="1tM-oy-WZ0" secondAttribute="leading" id="o00-AY-amq"/>
+                            <constraint firstItem="PZ3-re-NDY" firstAttribute="top" secondItem="0Kc-Bl-ldF" secondAttribute="bottom" id="uGT-b3-YnF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goToTableView" destination="PZ3-re-NDY" id="8lR-v9-qmT"/>
+                        <outlet property="yaoqinggysView" destination="KJM-gh-Y1X" id="pVS-DU-WAd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZY-25-TDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="273"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="通讯录－电话" width="48" height="48"/>
+    </resources>
+</document>

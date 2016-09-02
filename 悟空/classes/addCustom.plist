@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>基础信息</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>公司名称:</string>
+			<key>icon</key>
+			<string>xinghao</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>联系人:</string>
+			<key>icon</key>
+			<string>xinghao</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>联系电话:</string>
+			<key>icon</key>
+			<string>xinghao</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>所在位置:</string>
+			<key>icon</key>
+			<string>xinghao</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>详细地址:</string>
+			<key>icon</key>
+			<string>xinghao</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>公司行业:</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>日用量(车):</string>
+		</dict>
+	</array>
+</array>
+</plist>

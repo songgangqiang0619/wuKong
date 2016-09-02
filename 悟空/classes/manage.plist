@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>管理－煤炭管理</string>
+			<key>name</key>
+			<string>煤炭管理</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>我要采购</string>
+			<key>icon</key>
+			<string>管理－采购订单</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>销售指数</string>
+			<key>icon</key>
+			<string>管理－销售指数</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>销售订单</string>
+			<key>icon</key>
+			<string>管理－销售订单</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>采购订单</string>
+			<key>icon</key>
+			<string>manager_buyer_order</string>
+		</dict>
+	</array>
+</array>
+</plist>

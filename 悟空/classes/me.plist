@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>资金安全</string>
+			<key>icon</key>
+			<string>me_account</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>修改密码</string>
+			<key>icon</key>
+			<string>me_modify_pwd</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>意见反馈</string>
+			<key>icon</key>
+			<string>me_opinion</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>委托推广（找车、销售、找货）</string>
+			<key>icon</key>
+			<string>me_entrust</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>快煤客服</string>
+			<key>icon</key>
+			<string>me_service</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>退出</string>
+			<key>icon</key>
+			<string>me_exit</string>
+		</dict>
+	</array>
+</array>
+</plist>
